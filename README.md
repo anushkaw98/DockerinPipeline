@@ -1,16 +1,5 @@
-# DockerinPipeline
+# Docker in a Pipeline(Jenkins)
 create a pipeline to add Docker file into dockerhub using Jenkins
-
-
-
-<h3>prerequisites</h3>
-- please check below repository,it will hepls to create docker image(nodejs application) which use here to create pipeline
-- Go to manage credentials and add Credentials for 
-
-  - <b>Docker</b> 
-  - <b>Github</b> 
-
- #### (https://github.com/anushkaw98/nodejs_Docker.git)
 
 
 
@@ -19,15 +8,31 @@ create a pipeline to add Docker file into dockerhub using Jenkins
 - <b>Jenkins</b>
 - <b>Docker desktop</b>
 
+
+
+<h3>prerequisites</h3>
+
+- please check below repository,it will hepls to create docker image(nodejs application) which has used here to create pipeline
+
+- Go to Genkins/manage credentials and add Credentials for 
+
+  - <b>Docker</b> 
+  - <b>Github</b> 
+
+ #### (https://github.com/anushkaw98/nodejs_Docker.git)
+
+
+
+
 <h2>Program walk-through:</h2>
 
 Go to Jekins dashboard and create a new pipeline
 
 
 
-set a Poll SCM Schedul(if need) under Build Triggers section
+set a Poll SCM Schedule (if need) under Build Triggers section
 
-enter below code insude to the pipeline script
+enter below code to the pipeline script and Build,!!!
 
 
     pipeline {
@@ -71,5 +76,6 @@ enter below code insude to the pipeline script
     }
 
 
-
+#### check on your docker hub
+delete from your local docker and again try to pull from docker hub and make sure it works fine .
 
